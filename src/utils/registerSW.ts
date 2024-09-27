@@ -15,6 +15,8 @@ function loadProxyScripts() {
         uvConfig.src = '/uv/uv.config.js';
         uvConfig.defer = true;
         document.body.appendChild(uvConfig);
+        const aeroConfig = document.createElement('script');
+        aeroConfig.src = "/aero/aero.config.js";
         const bareMux = document.createElement('script');
         bareMux.src = '/baremux/bare.cjs';
         bareMux.defer = true;
